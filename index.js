@@ -17,7 +17,7 @@ let posts = [
         content : "Village Type"
     },
      {
-        username : "Binay",
+        username : "BinayBhusan",
         content : "I Love Coding"
      }
 ];
