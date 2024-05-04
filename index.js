@@ -20,8 +20,8 @@ let posts = [
      }
 ];
 
-app.get("/", (req, res) =>{
-    res.send("server is working");
+app.get("/posts", (req, res) =>{
+    res.render("index.ejs", { posts });
 });
 
 app.listen(port, ()=> {
