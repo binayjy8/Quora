@@ -30,6 +30,11 @@ app.get("/posts/new", (req, res) => {
     res.render("new.ejs");
 });
 
+app.post("/posts", (req, res) => {
+    console.log(req.body);
+    res.send("post request working");
+});
+
 app.listen(port, ()=> {
     console.log(`listening to the port ${port}`);
 });
