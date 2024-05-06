@@ -22,6 +22,7 @@ let posts = [
      },
      {
         username : "Baby",
+        content : "i'm also love coding"
      }
 ];
 
