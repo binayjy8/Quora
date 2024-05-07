@@ -1,6 +1,8 @@
 const express = require("express");
 const app = express();
 const path = require("path");
+import { v4 as uuidv4 } from 'uuid';
+
 
 const port = 8080;
 
@@ -13,17 +15,17 @@ app.use(express.static(path.join(__dirname, "public")));
 
 let posts = [
     {
-        id : "1a",
+        id : uuidv4(),
         username : "Khuntapingu",
         content : "Village Type"
     },
      {
-        id : "2b",
+        id : uuidv4(),
         username : "BinayBhusan",
         content : "I Love Coding"
      },
      {
-        id : "3c",
+        id : uuidv4(),
         username : "Cricketer",
         content : "i also love coding"
      }
