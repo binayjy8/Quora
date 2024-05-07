@@ -46,15 +46,18 @@ app.post("/posts", (req, res) => {
     res.redirect("/posts");
 });
 
-app.patch("/posts/:id", (req, res) => {
-    let { id } = req.params;
-    let newContent = req.body.content;
-})
+
 
 app.get("/posts/:id", (req, res) =>{
     let { id } = req.params;
     let post = posts.find((p) => id === p.id);
     res.render("show.ejs", { post });
+});
+
+app.patch("/posts/:id", (req, res) => {
+    let { id } = req.params;
+    let newContent = req.body.content;
+    let post = posts.find((p) => id === p.id);
 });
 
 app.listen(port, ()=> {
