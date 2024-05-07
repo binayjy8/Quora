@@ -24,7 +24,7 @@ let posts = [
      },
      {
         id : "3c",
-        username : "Baby",
+        username : "Cricketer",
         content : "i also love coding"
      }
 ];
