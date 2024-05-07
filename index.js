@@ -40,6 +40,13 @@ app.post("/posts", (req, res) => {
     res.redirect("/posts");
 });
 
+app.get("/posts/id:", (req, res) =>{
+    let { id } = req.params;
+    let post = posts.find((p) => id === p.id);
+    console.log(post);
+    res.send("request working");
+});
+
 app.listen(port, ()=> {
     console.log(`listening to the port ${port}`);
 });
