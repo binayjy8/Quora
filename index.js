@@ -63,6 +63,10 @@ app.patch("/posts/:id", (req, res) => {
     res.send("patch request working");
 });
 
+app.get("posts/:id/edit", (req, res) => {
+    let { id } = req.params;
+});
+
 app.listen(port, ()=> {
     console.log(`listening to the port ${port}`);
 });
