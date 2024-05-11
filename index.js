@@ -29,7 +29,7 @@ let posts = [
      {
         id : uuidv4(),
         username : "Cricketer",
-        content : "i also love coding"
+        content : "i also love coding because"
      }
 ];
 
